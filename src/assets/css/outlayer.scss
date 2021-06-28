@@ -1,0 +1,106 @@
+.outlayer{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .title{
+    padding: 10px 0;
+  }
+  .outlayer-selef{
+    font-size:20px;
+    color:#222;
+    font-weight: bold;
+  }
+  .moc-item{
+    width: 25%;
+    text-align:center;
+    // height: 216px;
+    margin-bottom: 20px;
+    .item-child{
+      // height: 0;
+      padding-bottom: 30px;
+      border-radius: 6px;
+      height: auto;      
+      background:rgba(255,255,255,1);
+      &:hover{
+        box-shadow:0px 2px 15px 0px rgba(0,0,0,0.2);
+      }
+      .img-title {
+        padding-top: 60px;
+        // height:134px;
+        .img {
+          margin-bottom: 10px;
+          width: 100px;
+          height: 100px;
+          border: none;
+        }
+        .title-txt, .title-gray {
+          // padding-top: 10.2%;
+          margin: 20px 0 20px 0;
+          font-size: 16px;
+          color: #222;
+          font-weight: bold;
+          margin-top:24px; 
+        }
+        .title-gray {
+          padding-bottom: 20px;
+          font-weight: normal;
+          color: #333;
+        }
+        .title-desc {
+          padding: 0 20%;
+          margin-bottom: 35px;
+          color: #666;
+          text-align: center;
+        }
+        .detail-btn {
+          margin-bottom: 50px;
+          border-radius: 0!important;
+        }
+      }
+    }
+    .title{
+      font-size:16px;
+      line-height:22px;
+      color:#222;      
+      font-weight: bold;
+    }
+    .img{
+      width:61px;
+      height: auto;
+      
+    }
+    .btn-text {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      // height: 0;
+      border-top: 1px solid #F5F5F5;
+      height: 48px;
+
+      // padding-bottom: 19.6%;
+      .bigTop {
+        display: block;
+        line-height: 48px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .smallTop {
+        display: block;
+        margin-top: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      cursor: pointer;
+
+      a {
+        color: #666;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }  

@@ -1,0 +1,32 @@
+.self-table-style {
+  margin: 15px auto 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: transparent;
+  tr td {
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border: 1px solid #c9ddf7;
+    border-bottom: transparent;
+    border-right: transparent;
+  }
+  .bgTd {
+    background-color: #f2f7fd;
+  }
+  .bgTh {
+    background-color: #f2f2f2;
+  }
+  .top-content-padding td {
+    border: transparent;
+    border-top: 1px solid #c9ddf7;
+  }
+  tr .boderTdRight {
+    border-right: 1px solid #c9ddf7;
+  }
+  tr .borderTdNoLeft {
+    border-left: transparent;
+  }
+  tr .boderTdBottom {
+    border-bottom: 1px solid #c9ddf7;
+  }
+}

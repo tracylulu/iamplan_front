@@ -1,0 +1,466 @@
+/* UI设计规范 */
+html,body{
+  height:100%;
+}
+#app{
+  height:100%;
+}
+body {
+  margin: 0;
+  background-color: #fff;
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+}
+li,dt,dd{
+  list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+/* 浮动 */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+    
+.clearfix {
+  zoom: 1;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/* padding margin */
+.pd-lf-0{
+  padding-left:0 !important;
+}
+.pd-rt-0{
+  padding-right:0 !important;
+}
+.pd-lf-10{
+  padding-left:10px !important;
+}
+.pd-rt-10{
+  padding-right:10px !important;
+}
+.pd-lf-20{
+  padding-left:20px !important;
+}
+.pd-rt-20{
+  padding-right:20px !important;
+}
+.pd-lf-rt-20{
+  padding:0 20px;
+}
+.mg-lf-20{
+  margin-left:20px !important;
+}
+.mg-rt-20{
+  margin-right:20px !important;
+}
+.mg-lf-Minus{
+  margin-left:0 !important;
+}
+.mg-rt-Minus{
+  margin-right:0 !important;
+}
+.pd-150{
+  padding:0 7% 100px;
+}
+/* 表格最后一个是input标签的时候 */
+.inp-last-wp .el-input__inner{
+  padding-right:30px;
+}
+/* 日期input的宽度 */
+.inp-dateTime{
+  width:auto !important;
+}
+.inp-dateTime .el-input__inner{
+  padding-right:15px;
+}
+/* 汉字字体优先级 */
+#app{
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB','Arial','Helvetica Neue','Helvetica';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+}
+/* 英文字体优先级 */
+#app .enFont{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+.logoFlag {
+  color: #E70113;
+  font-weight: bold;
+}
+/* 字体大小 */
+.fontSize-12{
+    font-size:12px;
+}
+.fontSize-14{
+    font-size:14px;
+}
+.fontSize-16{
+    font-size:16px;
+}
+/* elementUI样式修改 */
+.mainContent {
+  margin-bottom: 30px;
+  padding:0 3%;
+}
+.navLogo {
+  height:60px;
+}
+#app.el-header {
+    padding: 0;
+  }
+
+.el-menu.el-menu--horizontal {
+      border-bottom: 0 !important;
+  }
+  /* 12.17 */
+ #app .el-input__inner {
+    height: 26px;
+    line-height: 26px;
+    border-radius: 0;
+    /* border-color: #E0E0E0; */
+  }
+  #app .el-form-item{
+    margin-bottom:12px;
+  }
+  #app .el-form-item.last_input{
+    margin-bottom:0;
+  }
+ .el-form-item__content{
+    line-height:34px;
+  }
+ .el-form-item__label{
+    line-height:34px;
+    padding-right: 30px;
+  }
+ .el-input__icon{
+    line-height:34px;
+  }
+  #app .el-button:not(.el-button--text) {
+    width: 100px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px 5px;
+  }
+  #app .el-button.longBtn {
+    padding: 0 10px;
+    width: auto;
+  }
+  #app .el-button--primary, .el-button--primary:focus {
+    background-color: #386ED3;
+  }
+  #app .el-button--primary:hover {
+    background-color: #232B99;
+  }
+  #app .el-button--info, .el-button--info:focus {
+    background-color: #666;
+  }
+  #app .el-button.is-disabled {
+    background-color: #a0cfff;
+  }
+  .el-pagination {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .btn-prev, .el-pagination.is-background .el-pager li {
+    background-color: #fff !important;
+    border: 1px solid #E1E2E3 !important;
+  }
+ .el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #386ED3 !important;
+    color: #FFF !important;
+  }
+ .el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+    margin: 0 5px;
+    background-color: #fff !important;
+    color: #666 !important;
+    min-width: 30px;
+    border: 1px solid #E1E2E3 !important;
+    border-radius: 4px;
+  }
+  
+#app .el-pagination .el-input__inner {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    border-color: #E0E0E0;
+  }
+ .btn-next,.btn-prev{
+    padding: 0 8px!important;
+  }
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    color: #333!important;
+    background-color: #fff!important;
+  }
+  router-link {
+    text-decoration: none;
+  }
+  .btnBox {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .btnBox .el-button {
+    margin-right: 30px;
+  }
+  .btnBox .el-button:last-child {
+    margin: 0;
+  }
+  
+  .el-dialog .el-form-item__content {
+    width: 70%;
+  }
+  .el-dialog .el-dialog__footer {
+    text-align: center;
+  }
+  .radioFlag .el-form-item__label {
+    width: 120px !important;
+  }
+  .radioFlag .el-form-item__content {
+    margin-left: 120px !important;
+  }
+  .el-textarea__inner {
+    border-radius: 0;
+  }
+  #app .el-table td,#app .el-table th {
+    padding: 6px 0;
+  }
+  .title{
+    padding: 10px 3%;
+    background-color: #f2f2f2;
+    /* padding: 10px 0; */
+  }
+  .navBar {
+    font-size: 12px;
+  }
+  .navItem {
+    float: left;
+  }
+  .navItem a {
+    color: #333;
+  }
+  .navItemSplit {
+    margin: 0 10px;
+  }
+  .navItemHome,.navItemCol {
+    cursor: pointer;
+  }
+  .formPad {
+    padding-bottom: 20px;
+  }
+ .conBox {
+    padding: 0 15px;
+  }
+.courseMenu {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #E3E7EF;
+  }
+.suggestItem {
+    text-align: right;
+  }
+ .redStat {
+    color: #f56c6c;
+  }
+.redStatSet {
+    margin-left:-10px;
+  }
+ .redStatIxt {
+    margin-right: 4px;
+  }
+ .redStatIxtLX {
+    position: absolute;
+    left: 0px;
+    top: 13px;
+  }
+  
+  .el-select {
+    width: 100%;
+  }
+  /* 解决IE9下 select 框的 箭头问题 */
+  .el-select .el-input .el-select__caret{
+    transform:rotate(180deg)\0;
+  }
+  .el-select .el-input .is-reverse.el-select__caret{
+    transform:rotate(0)\0;
+  }
+  /* IE9下 时间 选择器样式问题 */
+  .el-range-separator{
+    vertical-align:top\0;
+  }
+  .el-date-editor .el-range-input{
+    vertical-align:top\0;
+  }
+  /* 导出下载文件的删除按钮始终显示 */
+  #app .el-upload-list__item .el-icon-close{
+    display:block;
+  }
+  #app .el-radio__input.is-checked .el-radio__inner {
+    border-color: #386ED3!important ;
+    background: #386ED3!important;
+}
+#app .el-button--text {
+  color: #386ED3;
+  width: auto;
+  padding: 0;
+}
+.courseMenu .el-menu--horizontal>.el-menu-item.is-active {
+  border-bottom: 2px solid #386ED3!important;
+  color: #386ED3!important;
+}
+#app .el-radio-button__orig-radio:checked+.el-radio-button__inner {
+  color: #FFF;
+  background-color: #386ED3!important;
+  border-color: #386ED3!important;
+  -webkit-box-shadow: -1px 0 0 0 #386ED3!important;
+  box-shadow: -1px 0 0 0 #386ED3!important;
+}
+.el-select-dropdown__item.selected {
+  color:#386ED3!important; 
+}
+.navContent .el-menu--horizontal>.el-menu-item.is-active {
+  background-color: #386ED3!important;
+  border-bottom: none!important;
+  color: #fff!important;
+}
+#app .el-loading-text {
+  color:#386ED3!important;
+}
+#app .el-loading-spinner .path {  
+  stroke: #386ED3!important;  
+}
+.el-cascader-node.in-active-path, .el-cascader-node.is-active, .el-cascader-node.is-selectable.in-checked-path {
+  color:#386ED3!important;
+}
+.el-cascader-node.in-active-path, .el-cascader-node.is-active, .el-cascader-node.is-selectable.in-checked-path {
+  color:#386ED3!important;
+}
+.txtInputBox .el-tag {
+  color:#386ED3!important;
+}
+#app .el-month-table td .cell:hover {
+  color:#386ED3!important;
+}
+.el-month-table td.current:not(.disabled) .cell {
+  color:#386ED3!important;
+}
+.infroTitle {
+  font-weight: 700!important;
+}
+
+/* 培训计划任务 输入框长度 12.12 */
+#app .inp_100{
+  width:100%;
+}
+/* 12.17 */
+#app .el-tabs__nav-wrap::after{
+  height:1px;
+}
+#app .el-table th{
+  color:#333;
+  font-weight:700;
+}
+#app .el-table td{
+  padding:5px 0;
+}
+#app .el-tabs__item.is-active{
+  font-weight:700;
+}
+#app .el-cascader{
+  line-height:34px;
+}
+#app .el-radio-button__inner{
+  /* padding-top:10px;
+  padding-bottom:10px; */
+  padding: 0 30px;
+  height: 26px;
+  line-height: 24px;
+}
+
+.el-message-box .btn-custom-cancel {
+  float: right!important;
+  margin-left: 10px;
+}
+
+.el-textarea.is-disabled .el-textarea__inner, .el-input.is-disabled .el-input__inner {
+  background-color: #fefefe!important;
+  border-color: #E4E7ED!important;
+  color: #666!important;
+}
+
+.el-radio__input.is-disabled+span.el-radio__label {
+  color: #666!important;
+}
+
+/* placeholder字体颜色#666 */
+.placeholderText_666 .el-input__inner::placeholder, .placeholderText_666 .el-textarea__inner::placeholder {
+  color: #666;
+}
+/* 谷歌 */
+.placeholderText_666 .el-input__inner::-webkit-input-placeholder, .placeholderText_666 .el-textarea__inner::-webkit-input-placeholder {
+  color: #666;
+}
+/* 火狐 */
+.placeholderText_666 .el-input__inner:-moz-placeholder, .placeholderText_666 .el-textarea__inner:-moz-placeholder {
+  color: #666;
+}
+/*ie*/
+.placeholderText_666 .el-input__inner:-ms-input-placeholder, .placeholderText_666 .el-textarea__inner:-ms-input-placeholder {
+  color: #666;
+}
+
+.el-button--primary:hover {
+  background-color: #386ED3!important;
+}
+.el-button--primary{
+  background-color: #386ED3!important;
+}
+#app table thead th {
+  background-color: #f2f2f2;
+}
+#app .el-table .cell {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* 删除、置空、取消等按钮样式 */
+.dangerBtn_666, .dangerBtn_666:hover, .dangerBtn_666:focus {
+  background-color: #666!important;
+  border: 1px solid #666!important;
+}
+/* 表格上方标题 */
+.titleHeaderText {
+  font-size: 16px;
+  color: #111111;
+}
+
+#app .table-fixed .el-table__fixed-right {
+  height: 100%!important;
+}
+
+.bgTd {
+  background-color: #f2f7fd;
+}
+
+#app .el-table {
+  -moz-user-select: none!important; /*火狐*/
+  -webkit-user-select: none!important; /*webkit浏览器*/
+  -ms-user-select: none!important; /*IE10*/
+  -khtml-user-select: none!important; /*早期浏览器*/
+  user-select: none!important;
+}
+
+.formBox {
+  padding: 15px 3%;
+}
